@@ -1,0 +1,39 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bone: #f4f1ea;
+  --ink: #2b2a26;
+  --sub: #7a766c;
+  --line: #d9d4c7;
+  --sage: #8a9a7b;
+  --clay: #b07a5c;
+  --warn: #a8553f;
+  --font: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", Georgia, serif;
+  --tab-h: 60px;
+  --header-h: 52px;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--bone);
+  color: var(--ink);
+  font-family: var(--font);
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
